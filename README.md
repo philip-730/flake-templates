@@ -59,6 +59,19 @@ nix develop
 nix build .#image
 ```
 
+### `tanstack-start`
+
+TanStack Start with node-server preset, OCI image, and dev shell.
+Requires `server: { preset: "node-server" }` in `app.config.ts`.
+
+```bash
+nix flake init -t github:philip-730/flake-templates#tanstack-start
+# replace npmDepsHash with pkgs.lib.fakeHash, run nix build .#image,
+# then paste the correct hash from the error output
+nix develop
+nix build .#image
+```
+
 ### `fullstack`
 
 FastAPI backend + Next.js frontend with OCI images and composed dev shells.

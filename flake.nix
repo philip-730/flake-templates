@@ -22,6 +22,11 @@
         path = ./fullstack;
         description = "Full-stack FastAPI + Next.js with OCI images and composed dev shells";
       };
+
+      tanstack-start = {
+        path = ./tanstack-start;
+        description = "TanStack Start node-server build with OCI image and dev shell";
+      };
     };
   };
 }
